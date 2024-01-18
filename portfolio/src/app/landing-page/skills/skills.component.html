@@ -1,0 +1,22 @@
+<div class="content">
+    <div class="icon-box">
+        <div *ngFor="let icon of icons">
+            <div class="icon-container">
+                <img [src]="icon.url" alt="{{ icon.description }}" />
+                <p>{{ icon.description }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="my-skills">
+        <div class="skills-box">
+            <h1>
+                My skills
+            </h1>
+            <div class="separator"></div>
+        </div>
+        <span>I have enhanced my frontend development skills, enabling me to undertake various real projects.</span>
+        <div class="touch-button">
+            Get in touch
+        </div>
+    </div>
+</div>

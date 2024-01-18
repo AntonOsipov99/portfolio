@@ -1,0 +1,60 @@
+h1 {
+    font-size: 72px;
+    color: white;
+    margin-left: 100px;
+}
+
+p {
+    margin-left: 100px;
+    color: white;
+    width: 500px;
+}
+
+.info-box {
+    margin-left: 130px;
+    margin-top: 30px;
+    display: flex;
+
+    >span {
+        color: white;
+        width: 360px;
+    }
+
+    >img {
+        height: 50px;
+        width: 50px;
+        margin-right: 50px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.content {
+    background-image: url(/assets/img/purple-shadow.svg);
+    background-position: 140% -20%;
+    background-repeat: no-repeat;
+    background-size: 600px 600px;
+    display: flex;
+    align-items: center;
+
+    >img {
+        height: 400px;
+        width: 400px;
+        margin-left: 159px;
+        border: 4px solid #00BEE8;
+        border-radius: 50%;
+    }
+}
+
+.margin-bottom {
+    margin-bottom: 150px;
+}
+
+@media (min-width: 1500px) {
+    .content {
+        justify-content: space-around;
+    }  
+}
