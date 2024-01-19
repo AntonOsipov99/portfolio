@@ -1,0 +1,116 @@
+.content {
+    background-image: url(/assets/img/blue-shadow-contact.svg);
+    background-position: 110% 0%;
+    background-repeat: no-repeat;
+    background-size: 400px 400px; 
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    >h1 {
+        color: white;
+        margin-left: 42px;
+        font-size: 72px;
+    }
+}
+
+.separator {
+    width: 58px;
+    height: 4px;
+    background-color: #4B47FF;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+h2 {
+    color: white;
+    margin-left: 100px;
+    font-size: 32px;
+}
+
+.flex-box {
+    display: flex;
+    background-image: url(/assets/img/bottom-shadow.svg);
+    background-position: 0% 95%;
+    background-repeat: no-repeat;
+    background-size: 400px 400px; 
+}
+
+.contact-description {
+    color: white;
+    margin-right: 50px;
+    >span {
+        margin-left: 100px;
+        width: 380px;
+        display: block;
+    }
+    >p {
+        margin-left: 100px;
+        >span {
+            font-weight: 700;
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    >input {
+        background-color: #1D273C;
+        border: 1px solid #4B47FF;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 25px 15px 25px;
+        width: 600px;
+        &:hover {
+            border-color: #00BEE8;
+        }
+    }
+    >textarea {
+        background-color: #1D273C;
+        border: 1px solid #4B47FF;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 25px 15px 25px;
+        width: 600px;
+        height: 200px;
+        &:hover {
+            border-color: #00BEE8;
+        }
+    }
+}
+
+button {
+    width: 236px;
+    font-size: 23px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: #00BEE8;
+    border: transparent;
+    cursor: pointer;
+    margin-bottom: 100px;
+    transition: transform 0.2s ease;
+    &:hover {
+        background-color: #4B47FF;
+        transform: scale(1.1);
+    }
+}
+
+.arrow-image {
+    height: 39px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 39px;
+    cursor: pointer;
+    background-image: url('/assets/img/go-up-button.svg');
+    &:hover {
+    background-image: url('/assets/img/arrow-blue.svg');
+    }
+}

@@ -1,7 +1,11 @@
+body {
+    scroll-behavior: smooth;
+}
+
 .content {
     height: 100vh;
     width: 100%;
-    background-color: rgb(20,29,47);
+    background-color: rgb(20, 29, 47);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,20 +13,14 @@
     background-position: 0% 26%;
     background-repeat: no-repeat;
     background-size: 800px 800px;
-    border-bottom-right-radius: 70%;
 }
 
-.background-image {
-    
-    width: 600px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    >img {
-        height: 635px;
-        width: 400px;
-        object-fit: cover;
-    }
+
+.profil-image {
+    height: auto;
+    width: 32%;
+    object-fit: cover;
+    margin-right: 8%;
 }
 
 .vertical-headline {
@@ -30,6 +28,8 @@
     font-size: 58px;
     transform: rotate(270deg);
     margin-bottom: 82px;
+    display: flex;
+
     >span {
         margin-right: 10px;
     }
@@ -42,6 +42,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 1;
+
     >p {
         color: #4B47FF;
         font-size: 50px;
@@ -62,6 +65,7 @@
     font-weight: 400;
     margin-top: 40px;
     transition: transform 0.2s ease-in-out;
+
     &:hover {
         cursor: pointer;
         background-color: #4B47FF;
@@ -73,26 +77,36 @@
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-icons {
     display: flex;
     align-items: center;
+
     >span {
         color: white;
         font-size: 23px;
         margin-left: 20px;
     }
+
     >img {
         height: 30px;
         width: 30px;
         margin: 20px;
         transition: transform 0.1s ease-in-out;
+
         &:hover {
             cursor: pointer;
             transform: scale(1.3);
         }
     }
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .separator {
@@ -111,13 +125,113 @@
     align-items: center;
     font-size: 23px;
     gap: 10px;
+
     &:hover {
         cursor: pointer;
     }
-    > img {
-        height: 15px;
-        width: 15px;
-        transform: rotate(-90deg);
+
+    >a {
+        text-decoration: none;
+        color: white;
+
+        >img {
+            height: 15px;
+            width: 15px;
+            transform: rotate(-90deg);
+        }
     }
 }
 
+.background-bottom {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: -110%;
+    right: 0;
+    z-index: 0;
+}
+
+@media (min-width: 1700px) {
+    .background-bottom {
+        bottom: -104%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .background-bottom {
+        bottom: -90%;
+    }
+
+    .profil-image {
+        width: 40%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1130px) {
+    .background-bottom {
+        bottom: -80%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .headline {
+        font-size: 60px;
+
+        >p {
+            font-size: 40px;
+        }
+    }
+
+    .vertical-headline {
+        font-size: 53px;
+    }
+
+    .background-bottom {
+        bottom: -70%;
+    }
+
+    .profil-image {
+        width: 43%;
+    }
+}
+
+@media (max-width: 940px) {
+    .headline {
+        font-size: 50px;
+
+        >p {
+            font-size: 30px;
+        }
+    }
+
+    .vertical-headline {
+        font-size: 42px;
+    }
+
+    .background-bottom {
+        bottom: -60%;
+    }
+
+    .profil-image {
+        width: 46%;
+    }
+}
+
+@media (max-width: 830px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .background-bottom {
+        bottom: -28%;
+    }
+
+    .profil-image {
+        width: 36%;
+    }
+
+    .vertical-headline {
+        display: none;
+    }
+}

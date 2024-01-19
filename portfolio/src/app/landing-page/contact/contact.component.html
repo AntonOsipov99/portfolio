@@ -1,0 +1,23 @@
+<div class="content" id="contact">
+    <div class="headline">
+        <div class="separator"></div>
+        <h1>Contact</h1>
+    </div>
+    <div class="flex-box">
+        <div class="contact-description">
+            <h2>Got a problem to solve</h2>
+            <span>Reach out to me using this form, and let's get acquainted! I'm eager to learn about what you're
+                working on!</span>
+            <p>Need a Frontend developer? <span>Contact me!</span></p>
+        </div>
+        <div class="form">
+            <form (submit)="sendMail()" ngNativeValidate #myForm>
+                <input required type="text" name="name" #nameField>
+                <input required type="email" name="email" #emailField>
+                <textarea required type="text" name="message" #messageField></textarea>
+                <button #sendButton>Send message</button>
+                <a href="#content"><div class="arrow-image"></div></a>
+            </form>
+        </div>
+    </div>
+</div>

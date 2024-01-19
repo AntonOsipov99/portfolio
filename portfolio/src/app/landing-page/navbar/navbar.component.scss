@@ -1,24 +1,47 @@
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
     padding: 37px 100px;
-    background-color: rgb(20,29,47);
+    background-color: rgb(20, 29, 47);
     color: white;
-    >div > a {
+
+    >div>a {
         text-decoration: none;
         color: white;
         margin: 24px;
         font-size: 23px;
+
         &:hover {
             color: #00BEE8;
         }
     }
+
     h2 {
-        font-size: 34px;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 700;
         margin: 0px;
     }
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media (max-width: 830px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        background-image: url('/assets/img/burger-menu.svg');
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
 }

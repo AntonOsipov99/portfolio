@@ -3,6 +3,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -10,7 +12,9 @@ import { SkillsComponent } from './skills/skills.component';
   imports: [NavbarComponent,
     PresentationComponent,
     AboutMeComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent,
+    FooterComponent
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'

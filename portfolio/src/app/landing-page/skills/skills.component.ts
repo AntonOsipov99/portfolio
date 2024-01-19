@@ -1,10 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { JoinComponent } from './join/join.component';
+import { ElPolloLocoComponent } from './el-pollo-loco/el-pollo-loco.component';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,
+     JoinComponent,
+     ElPolloLocoComponent
+    ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
