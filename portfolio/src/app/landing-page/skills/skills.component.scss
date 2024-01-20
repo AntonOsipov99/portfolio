@@ -1,8 +1,8 @@
 .content {
     background-image: url(/assets/img/green-shadow.svg);
-    background-position: -57% 111%;
+    background-position: -47% 111%;
     background-repeat: no-repeat;
-    background-size: 700px 700px; 
+    background-size: 700px 640px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -14,7 +14,7 @@
     color: white;
     margin-left: 100px;
     flex-wrap: wrap;
-    width: 900px;
+    width: 800px;
     column-gap: 100px;
     row-gap: 30px;
 }
@@ -28,6 +28,7 @@ img {
     height: 60px;
     width: 60px;
     transition: transform 0.2s ease-in-out;
+
     &:hover {
         transform: scale(1.2);
     }
@@ -44,13 +45,15 @@ p {
     width: 90px;
 }
 
-.my-skills  {
+.my-skills {
+    margin-right: 80px;
+    margin-left: 80px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     >span {
-        margin-right: 100px;
         width: 390px;
     }
 }
@@ -60,6 +63,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 34px;
+
     >h1 {
         font-size: 72px;
     }
@@ -71,9 +75,26 @@ p {
     padding: 10px 30px 10px 30px;
     margin-top: 40px;
     transition: transform 0.2s ease-in-out;
-    margin-right: 120px;
     margin-bottom: 350px;
     font-size: 23px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #4B47FF;
+        transform: scale(1.2);
+    }
+}
+
+.touch-button-mobile {
+    background-color: #00BEE8;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    margin-top: 40px;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 350px;
+    font-size: 23px;
+    display: none;
+
     &:hover {
         cursor: pointer;
         background-color: #4B47FF;
@@ -93,16 +114,24 @@ p {
 
 .flex-box {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 }
 
 h1 {
     color: white;
     font-size: 72px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.portfolio-headline {
+    color: white;
+    font-size: 72px;
+    margin-bottom: 0;
+    margin-top: 0;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 0;
 }
 
 .headline-short-separator {
@@ -112,14 +141,270 @@ h1 {
     background-color: #4B47FF;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    margin-bottom: 50px;
 }
 
 .headline-long-separator {
-    width: -webkit-fill-available;;
+    width: -webkit-fill-available;
     height: 4px;
     background-color: #4B47FF;
+    margin-bottom: 50px;
 }
 
 .subheadline {
     color: white;
+}
+
+@media (max-width: 1300px) {
+    .content {
+        background-position: -75% 111%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .icon-box {
+        column-gap: 80px;
+    }
+
+    .my-skills {
+        margin-left: 0;
+    }
+
+    .skills-box {
+        >h1 {
+            font-size: 60px;
+            margin-left: 0;
+        }
+    }
+
+    .portfolio-headline {
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .content {
+        background-position: -47% 86%;
+        background-size: 500px 500px;
+        flex-direction: column-reverse;
+    }
+
+    .headline-short-separator {
+        margin-bottom: 40px;
+    }
+
+    .headline-long-separator {
+        margin-bottom: 40px;
+    }
+
+    .portfolio-headline {
+        margin-top: 200px;
+    }
+
+    .my-skills {
+        align-items: end;
+        margin-right: 100px;
+
+        >span {
+            text-align: end;
+            margin-bottom: 50px;
+        }
+    }
+
+    .separator {
+        top: 8%;
+    }
+
+    .icon-box {
+        width: auto;
+        margin-right: 100px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .touch-button {
+        display: none;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .touch-button-mobile {
+        display: flex;
+        position: absolute;
+        bottom: -30%;
+        right: 32%;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .content {
+        background-position: -190% 111%;
+        background-size: 640px 640px;
+    }
+
+    .icon-box {
+        column-gap: 160px;
+    }
+
+    .touch-button-mobile {
+        bottom: -12%;
+    }
+
+    .separator {
+        top: 6%;
+    }
+}
+
+@media (max-width: 940px) {
+    .skills-box {
+        >h1 {
+            font-size: 50px;
+        }
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .headline-short-separator {
+        margin-bottom: 35px;
+    }
+
+    .headline-long-separator {
+        margin-bottom: 35px;
+    }
+
+    .portfolio-headline {
+        font-size: 50px;
+    }
+
+
+    .separator {
+        top: 5%;
+    }
+}
+
+@media (max-width: 810px) {
+    .icon-box {
+        column-gap: 81px;
+    }
+}
+
+@media (max-width: 660px) {
+    .icon-box {
+        column-gap: 33px;
+    }
+}
+
+@media (max-width: 650px) {
+    .icon-box {
+        margin-left: 25px;
+        margin-right: 25px;
+        column-gap: 91px;
+    }
+
+    .portfolio-headline {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .separator {
+        width: 20px;
+    }
+
+    .my-skills {
+        margin-right: 25px;
+    }
+
+    .subheadline {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+}
+
+@media (max-width: 525px) {
+    .icon-box {
+        column-gap: 36px;
+    }
+
+    .touch-button-mobile {
+        right: unset;
+        left: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-box {
+        >h1 {
+            font-size: 40px;
+        }
+    }
+
+    .headline-short-separator {
+        margin-bottom: 28px;
+    }
+
+    .headline-long-separator {
+        margin-bottom: 28px;
+    }
+
+    .portfolio-headline {
+        font-size: 40px;
+    }
+
+    .separator {
+        top: 4%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 440px) {
+    .headline-short-separator {
+        margin-left: 32%;
+        width: 20px;
+    }
+    
+    .headline-long-separator {
+        width: 75px;
+    }
+}
+
+@media (max-width: 410px) {
+    .icon-box {
+        column-gap: 0;
+    }
+
+    .my-skills {
+        >span {
+            width: auto;
+            margin-left: 25px;
+        }
+    }
+
+    .touch-button-mobile {
+        left: 23%;
+    }
+}
+
+@media (max-width: 350px) {
+    .icon-container {
+        width: 80px;
+    }
+
+    .touch-button-mobile {
+        left: 19%;
+    }
+
+    .headline-short-separator {
+        margin-left: 13%;
+    }
 }

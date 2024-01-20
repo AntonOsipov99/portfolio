@@ -10,14 +10,14 @@
                 working on!</span>
             <p>Need a Frontend developer? <span>Contact me!</span></p>
         </div>
-        <div class="form">
-            <form (submit)="sendMail()" ngNativeValidate #myForm>
-                <input required type="text" name="name" #nameField>
-                <input required type="email" name="email" #emailField>
-                <textarea required type="text" name="message" #messageField></textarea>
-                <button #sendButton>Send message</button>
-                <a href="#content"><div class="arrow-image"></div></a>
-            </form>
-        </div>
+        <form (submit)="sendMail()" ngNativeValidate #myForm>
+            <input required type="text" name="name" #nameField>
+            <input required type="email" name="email" #emailField>
+            <textarea required type="text" name="message" #messageField></textarea>
+            <button #sendButton>Send message</button>
+            <a href="#content">
+                <div class="arrow-image"></div>
+            </a>
+        </form>
     </div>
 </div>

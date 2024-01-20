@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    padding: 37px 100px;
+    padding: 37px 75px 37px 100px;
     background-color: rgb(20, 29, 47);
     color: white;
 
@@ -36,12 +36,27 @@ nav {
 
     .mobile-menu-icon {
         display: block;
-        background-image: url('/assets/img/burger-menu.svg');
         background-repeat: no-repeat;
-        background-size: 30px 30px;
+        background-size: cover;
+        background-position: center;
         height: 30px;
         width: 30px;
         cursor: pointer;
     }
 
+    .mobile-menu-icon.menu-closed {
+        background-image: url('/assets/img/burger-menu.svg');
+        height: 25px;
+        width: 25px;
+    }
+    
+    .mobile-menu-icon.menu-open {
+        background-image: url('/assets/img/cross.svg');
+    }
+
+    @media (max-width: 650px) {
+        nav {
+            padding: 37px 25px;
+        }
+    }
 }

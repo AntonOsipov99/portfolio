@@ -34,29 +34,154 @@ p {
 
 .content {
     background-image: url(/assets/img/blue-shadow.svg);
-    background-position: 140% -20%;
+    background-position: 119% 0%;
     background-repeat: no-repeat;
-    background-size: 600px 600px;
+    background-size: 400px 400px;
     display: flex;
     align-items: center;
     position: relative;
     z-index: 1;
 
     >img {
-        height: 400px;
-        width: 400px;
+        height: auto;
+        width: 30%;
         margin-left: 159px;
         border: 4px solid #00BEE8;
         border-radius: 50%;
     }
 }
 
+.separator {
+    background-color: #00BEE8;
+    width: 100%;
+    height: 4px;
+}
+
 .margin-bottom {
     margin-bottom: 150px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1700px) {
     .content {
-        justify-content: space-around;
-    }  
+        background-position: 105% -2%;
+        background-repeat: no-repeat;
+        background-size: 400px 400px;
+
+        >img {
+            margin-left: 20%;
+        }
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .content {
+        >img {
+            margin-left: 5%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        background-position: 122% 10%;
+        background-size: 300px 300px;
+
+        >img {
+            width: 25%;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 990px) {
+    .content {
+        background-size: 250px 250px;
+
+        >img {
+            margin-left: 2%;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .content {
+        >img {
+            display: none;
+        }
+    }
+
+    .separator {
+        display: none;
+    }
+
+    p {
+        width: auto;
+        margin-right: 100px;
+    }
+
+    .info-box {
+        >span {
+            width: auto;
+            margin-right: 100px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+    h1 {
+        margin-left: 25px;
+    }
+
+    p {
+        width: auto;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .info-box {
+        margin-left: 25px;
+
+        >span {
+            width: auto;
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+    }
+
+    .content {
+        background-position: 138% 10%;
+        background-size: 200px 200px;
+    }
+}
+
+@media (max-width:560px) {
+    .info-box {
+        >img {
+            margin-right: 0;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .content {
+        background-position: 165% 10%;
+    }
 }

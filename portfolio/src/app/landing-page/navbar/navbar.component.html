@@ -7,5 +7,5 @@
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
     </div>
-    <div class="mobile-menu-icon"></div>
+    <div class="mobile-menu-icon" [ngClass]="{'menu-closed': isMenuClosed, 'menu-open': !isMenuClosed}" (click)="toggleMenu()"></div>
 </nav>

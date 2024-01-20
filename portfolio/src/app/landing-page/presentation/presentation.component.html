@@ -1,13 +1,19 @@
 <div class="content">
         <img class="profil-image" src="assets/img/upper-body-image2.png" alt="profil-image">
-    <div class="vertical-headline">
-        <span>I</span> am
-    </div>
     <div class="headline">
+        <div class="vertical-headline">
+            <span>I</span> am
+        </div>
         Anton Osipov <p>Frontend Developer</p>
         <a href="#contact"><div class="talk-button">
             Let's talk
         </div></a>
+    </div>
+    <div class="mobile-menu" [class.open]="!isMenuClosed">
+        <a href="#about-me"><p>About me</p></a>
+        <a href="#skills"><p>Skills</p></a>
+        <a href="#portfolio"><p>Portfolio</p></a>
+        <a href="#contact"><p class="margin-bottom">Contact</p></a>
     </div>
 </div>
 <div class="content-footer">

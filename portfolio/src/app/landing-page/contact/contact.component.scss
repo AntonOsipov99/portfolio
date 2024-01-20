@@ -2,13 +2,14 @@
     background-image: url(/assets/img/blue-shadow-contact.svg);
     background-position: 110% 0%;
     background-repeat: no-repeat;
-    background-size: 400px 400px; 
+    background-size: 400px 400px;
 }
 
 .headline {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+
     >h1 {
         color: white;
         margin-left: 42px;
@@ -35,19 +36,22 @@ h2 {
     background-image: url(/assets/img/bottom-shadow.svg);
     background-position: 0% 95%;
     background-repeat: no-repeat;
-    background-size: 400px 400px; 
+    background-size: 400px 400px;
 }
 
 .contact-description {
     color: white;
     margin-right: 50px;
+
     >span {
         margin-left: 100px;
         width: 380px;
         display: block;
     }
+
     >p {
         margin-left: 100px;
+
         >span {
             font-weight: 700;
         }
@@ -59,26 +63,32 @@ form {
     flex-direction: column;
     align-items: center;
     position: relative;
+    flex: 1;
+    margin-right: 100px;
     gap: 30px;
+
     >input {
         background-color: #1D273C;
         border: 1px solid #4B47FF;
         border-radius: 10px;
         color: white;
-        padding: 15px 25px 15px 25px;
-        width: 600px;
+        padding: 15px 0 15px 0;
+        width: 100%;
+
         &:hover {
             border-color: #00BEE8;
         }
     }
+
     >textarea {
         background-color: #1D273C;
         border: 1px solid #4B47FF;
         border-radius: 10px;
         color: white;
-        padding: 15px 25px 15px 25px;
-        width: 600px;
+        padding: 15px 0 15px 0;
+        width: 100%;
         height: 200px;
+
         &:hover {
             border-color: #00BEE8;
         }
@@ -96,6 +106,7 @@ button {
     cursor: pointer;
     margin-bottom: 100px;
     transition: transform 0.2s ease;
+
     &:hover {
         background-color: #4B47FF;
         transform: scale(1.1);
@@ -110,7 +121,31 @@ button {
     width: 39px;
     cursor: pointer;
     background-image: url('/assets/img/go-up-button.svg');
+
     &:hover {
-    background-image: url('/assets/img/arrow-blue.svg');
+        background-image: url('/assets/img/arrow-blue.svg');
+    }
+}
+
+@media (max-width: 1050px) {
+    .flex-box {
+        flex-direction: column;
+    }
+
+    form {
+        margin-left: 100px;
+    }
+
+    .contact-description {
+        margin-right: 100px;
+        > span {
+            width: auto;
+        }
+    }
+
+    .headline {
+        > h1 {
+            font-size: 60px;
+        } 
     }
 }
