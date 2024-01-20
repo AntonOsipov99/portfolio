@@ -118,3 +118,20 @@ img {
         width: 300px;
     }
 }
+
+@media (max-width: 440px) {
+    img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 380px) {
+    .test-button {
+        padding: 8px 15px 8px 15px;
+    }
+
+    .git-button {
+        padding: 8px 15px 8px 15px
+    }
+}

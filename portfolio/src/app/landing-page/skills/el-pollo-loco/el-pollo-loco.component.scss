@@ -36,9 +36,11 @@
     padding: 10px 30px 10px 30px;
     background-color: #4B47FF;
     border-radius: 10px;
+
     &:hover {
         cursor: pointer;
-        background-color: #00BEE8;;
+        background-color: #00BEE8;
+        ;
     }
 }
 
@@ -48,6 +50,7 @@
     padding: 10px 30px 10px 30px;
     border: 1px solid #00BEE8;
     border-radius: 10px;
+
     &:hover {
         cursor: pointer;
         background-color: #00BEE8;
@@ -113,5 +116,22 @@ img {
 @media (max-width: 480px) {
     .description {
         width: 300px;
+    }
+}
+
+@media (max-width: 440px) {
+    img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 380px) {
+    .test-button {
+        padding: 8px 15px 8px 15px;
+    }
+
+    .git-button {
+        padding: 8px 15px 8px 15px
     }
 }

@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+   toggleImpressum() {
+    const element = document.querySelector(".impressum-menu");
+    element!.classList.toggle("impressum-menu-open");
+  }
+
+  closeImpressum() {
+    const element = document.querySelector(".impressum-menu");
+    element!.classList.remove("impressum-menu-open");
+  }
 }

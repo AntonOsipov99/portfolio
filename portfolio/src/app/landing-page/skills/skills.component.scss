@@ -294,6 +294,10 @@ h1 {
     .icon-box {
         column-gap: 81px;
     }
+
+    .headline-short-separator {
+        margin-left: 18%;
+    }
 }
 
 @media (max-width: 660px) {
@@ -338,6 +342,10 @@ h1 {
         right: unset;
         left: 30%;
     }
+
+    .content {
+    background-position: -68% 111%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -367,16 +375,7 @@ h1 {
         font-size: 40px;
     }
 }
-@media (max-width: 440px) {
-    .headline-short-separator {
-        margin-left: 32%;
-        width: 20px;
-    }
-    
-    .headline-long-separator {
-        width: 75px;
-    }
-}
+
 
 @media (max-width: 410px) {
     .icon-box {

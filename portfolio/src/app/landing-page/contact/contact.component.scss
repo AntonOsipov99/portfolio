@@ -105,11 +105,11 @@ button {
     border: transparent;
     cursor: pointer;
     margin-bottom: 100px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease-in-out;
 
     &:hover {
         background-color: #4B47FF;
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 }
 
@@ -127,9 +127,19 @@ button {
     }
 }
 
+@media (max-width: 1150px) {
+    .headline {
+        >h1 {
+            font-size: 60px;
+        }
+    }
+}
+
 @media (max-width: 1050px) {
     .flex-box {
         flex-direction: column;
+        background-position: 0% 99%;
+        background-size: 300px 300px;
     }
 
     form {
@@ -138,14 +148,76 @@ button {
 
     .contact-description {
         margin-right: 100px;
-        > span {
+
+        >span {
             width: auto;
         }
     }
 
+}
+
+@media (max-width: 940px) {
     .headline {
-        > h1 {
-            font-size: 60px;
-        } 
+        >h1 {
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .flex-box {
+        background-position: 0% 100%;
+        background-size: 230px 230px;
+    }
+}
+
+@media (max-width: 650px) {
+    form {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .flex-box {
+        background-size: 150px 150px;
+    }
+
+    .content {
+        background-position: 140% 0%;
+        background-size: 300px 300px;
+    }
+
+    .contact-description {
+        margin-right: 25px;
+
+        >span {
+            margin-left: 25px;
+        }
+
+        >p {
+            margin-left: 25px;
+        }
+    }
+
+    h2 {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline {
+        >h1 {
+            font-size: 40px;
+        }
+    }
+
+    .content {
+        background-position: 140% 0%;
+    }
+}
+
+@media (max-width: 400px) {
+    .content {
+        background-position: 240% 0%;
+        background-size: 300px 300px;
     }
 }
