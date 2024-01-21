@@ -97,15 +97,17 @@ body {
         margin-left: 20px;
     }
 
-    >img {
-        height: 30px;
-        width: 30px;
-        margin: 20px;
-        transition: transform 0.1s ease-in-out;
+    >a {
+        >img {
+            height: 30px;
+            width: 30px;
+            margin: 20px;
+            transition: transform 0.1s ease-in-out;
 
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.3);
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.3);
+            }
         }
     }
 }
@@ -345,6 +347,21 @@ a {
     }
 }
 
+@media screen and (max-height: 650px) and (orientation: landscape) {
+    .background-bottom {
+        bottom: -100%;
+    }
+
+    .contact-icons {
+        >a {
+            >img {
+                margin: 13px;
+            }
+        }
+
+    }
+}
+
 @media (max-width: 510px) {
     .background-bottom {
         bottom: -4%;
@@ -401,8 +418,10 @@ a {
     }
 
     .contact-icons {
-        >img {
-            margin: 15px;
+        >a {
+            >img {
+                margin: 15px;
+            }
         }
     }
 }

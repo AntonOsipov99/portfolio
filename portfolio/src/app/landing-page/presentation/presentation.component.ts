@@ -15,10 +15,7 @@ export class PresentationComponent implements OnInit {
   constructor(private menuService: MenuService) { }
 
   ngOnInit() {
-    // Initialen Zustand setzen
     this.isMenuClosed = this.menuService.isMenuClosed;
-
-    // Auf Änderungen im Menüzustand reagieren
     this.menuService.menuState$.subscribe((state: boolean) => {
       this.isMenuClosed = state;
     });

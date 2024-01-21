@@ -17,8 +17,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.isMenuClosed = this.menuService.isMenuClosed;
-
-    // Subscribe to menu state changes
     this.menuService.menuState$.subscribe((state: boolean) => {
       this.isMenuClosed = state;
     });

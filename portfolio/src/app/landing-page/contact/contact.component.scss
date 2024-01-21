@@ -3,6 +3,7 @@
     background-position: 110% 0%;
     background-repeat: no-repeat;
     background-size: 400px 400px;
+    justify-content: space-between;
 }
 
 .headline {
@@ -33,6 +34,7 @@ h2 {
 
 .flex-box {
     display: flex;
+    justify-content: space-between;
     background-image: url(/assets/img/bottom-shadow.svg);
     background-position: 0% 95%;
     background-repeat: no-repeat;
@@ -63,8 +65,8 @@ form {
     flex-direction: column;
     align-items: center;
     position: relative;
-    flex: 1;
-    margin-right: 100px;
+    width: 40%;
+    margin-right: 90px;
     gap: 30px;
 
     >input {
@@ -72,7 +74,7 @@ form {
         border: 1px solid #4B47FF;
         border-radius: 10px;
         color: white;
-        padding: 15px 0 15px 0;
+        padding: 15px 5px;
         width: 100%;
 
         &:hover {
@@ -85,7 +87,7 @@ form {
         border: 1px solid #4B47FF;
         border-radius: 10px;
         color: white;
-        padding: 15px 0 15px 0;
+        padding: 15px 5px;
         width: 100%;
         height: 200px;
 
@@ -144,10 +146,12 @@ button {
 
     form {
         margin-left: 100px;
+        width: auto;
     }
 
     .contact-description {
         margin-right: 100px;
+        margin-bottom: 50px;
 
         >span {
             width: auto;
