@@ -20,4 +20,8 @@ export class PresentationComponent implements OnInit {
       this.isMenuClosed = state;
     });
   }
+
+  toggleMenu() {
+    this.menuService.toggleMenu();
+  }
 }

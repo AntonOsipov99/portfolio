@@ -10,10 +10,10 @@
         </div></a>
     </div>
     <div class="mobile-menu" [class.open]="!isMenuClosed">
-        <a href="#about-me"><p>About me</p></a>
-        <a href="#skills"><p>Skills</p></a>
-        <a href="#portfolio"><p>Portfolio</p></a>
-        <a href="#contact"><p class="margin-bottom">Contact</p></a>
+        <a href="#about-me" (click)="toggleMenu()"><p>About me</p></a>
+        <a href="#skills" (click)="toggleMenu()"><p>Skills</p></a>
+        <a href="#portfolio" (click)="toggleMenu()"><p>Portfolio</p></a>
+        <a href="#contact" (click)="toggleMenu()"><p class="margin-bottom">Contact</p></a>
     </div>
 </div>
 <div class="content-footer">
