@@ -1,21 +1,20 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
 
-   toggleImpressum() {
-    const element = document.querySelector(".impressum-menu");
-    element!.classList.toggle("impressum-menu-open");
+  isImpressumVisible: boolean = false;
+
+  onImpressumClick() {
+    this.isImpressumVisible = !this.isImpressumVisible;
   }
 
-  closeImpressum() {
-    const element = document.querySelector(".impressum-menu");
-    element!.classList.remove("impressum-menu-open");
-  }
 }
