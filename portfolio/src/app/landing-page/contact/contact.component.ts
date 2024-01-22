@@ -39,15 +39,15 @@ export class ContactComponent implements OnInit {
     emailField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true;
-    // let fd = new FormData();
-    // fd.append('name', nameField.value);
-    // fd.append('email', emailField.value);
-    // fd.append('message', messageField.value);
-    // await fetch('https://anton-osipov.de/send_mail.php',
-    //   {
-    //     method: 'post',
-    //     body: fd
-    //   })
+    let fd = new FormData();
+    fd.append('name', nameField.value);
+    fd.append('email', emailField.value);
+    fd.append('message', messageField.value);
+    await fetch('https://anton-osipov.de/send_mail.php',
+      {
+        method: 'post',
+        body: fd
+      })
     nameField.value = '';
     emailField.value = '';
     messageField.value = '';
