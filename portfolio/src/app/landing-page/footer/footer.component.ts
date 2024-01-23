@@ -11,10 +11,4 @@ import { CommonModule } from '@angular/common';
 })
 export class FooterComponent {
 
-  isImpressumVisible: boolean = false;
-
-  onImpressumClick() {
-    this.isImpressumVisible = !this.isImpressumVisible;
-  }
-
 }

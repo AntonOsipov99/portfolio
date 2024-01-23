@@ -1,33 +1,13 @@
-<div class="impressum-menu" [ngClass]="{'display-block': isImpressumVisible, 'display-none': !isImpressumVisible}">
-    <img class="close" src="assets/img/cross.svg" alt="cross-img" (click)="onImpressumClick()">
-    <h1>Impressum</h1>
-    <h2>Angaben gemäß § 5 TMG:</h2>
-    <p><br>Anton Osipov</p>
-    <h3>Postanschrift:</h3>
-    <p>Feuerwehrstraße 37<br>77933 Lahr<br></p>
-    <h3>Kontakt:</h3>
-    <p>Telefon: +4915225466370<br>E-Mail: antonosipov&#64;web.de</p>
-    <p></p>
-    <p><br></p>
-    <p></p>
-    <h2>Hinweise zur Website</h2>
-    <p></p>
-    <h2>Information gemäß § 36 VSBG</h2>
-    <p class="long-text">Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz über die alternative Streitbeilegung in
-        Verbrauchersachen) erklärt der Betreiber dieser Website:</p>
-    <p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
-        teilzunehmen.</p>
-    <p></p>
-    <p><em>Das Impressum wurde mit dem <a href="https://www.activemind.de/datenschutz/impressums-generator/">Impressums-Generator der 
-        activeMind AG</a> erstellt.</em></p>
-</div>
 <div class="separat"></div>
 <footer id="footer">
-    <div><span class="first-name">Anton</span><br><a class="impressum" (click)="onImpressumClick()">Impressum</a></div>
+    <div><a href="https://anton-osipov.de/" class="first-name">Anton</a><br><a href="/impressum" class="impressum" routerLink="/impressum">Impressum</a>
+</div>
     <span class="name">© Anton Osipov 2023</span>
     <div class="footer-icons">
-        <a href="https://github.com/AntonOsipov99" target="_blank"><img src="assets/img/github-img.svg" alt="github-img"></a>
-        <a [href]="'mailto:antonosipov@web.de'" ><img src="assets/img/email-img.svg" alt="email-img"></a>
-        <a href="https://www.linkedin.com/in/anton-osipov-759b0724a/" target="_blank"><img src="assets/img/linkedin-img.svg" class="margin-right" alt="linkedIn-img"></a>
+        <a href="https://github.com/AntonOsipov99" target="_blank"><img src="assets/img/github-img.svg"
+                alt="github-img"></a>
+        <a [href]="'mailto:antonosipov@web.de'"><img src="assets/img/email-img.svg" alt="email-img"></a>
+        <a href="https://www.linkedin.com/in/anton-osipov-759b0724a/" target="_blank"><img
+                src="assets/img/linkedin-img.svg" class="margin-right" alt="linkedIn-img"></a>
     </div>
-</footer> 
+</footer>
