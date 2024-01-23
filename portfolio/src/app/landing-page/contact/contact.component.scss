@@ -68,10 +68,11 @@ form {
     width: 40%;
     margin-right: 100px;
     gap: 30px;
+
     ::placeholder {
         color: white;
         font-family: 'Poppins';
-      }
+    }
 
     >input {
         background-color: #1D273C;
@@ -130,6 +131,56 @@ button {
 
     &:hover {
         background-image: url('/assets/img/arrow-blue.svg');
+    }
+}
+
+@media (min-width: 1900px) {
+    .headline {
+        >h1 {
+            margin-left: 5%;
+        }
+    }
+
+    .separator {
+        width: 10%;
+    }
+
+    .contact-description {
+        margin-left: 15%;
+    }
+
+    h2 {
+        margin-left: 0;
+    }
+
+    .contact-description {
+        >span {
+            margin-left: 0;
+        }
+
+        >p {
+            margin-left: 0;
+        }
+    }
+
+    form {
+        margin-right: 15%;
+    }
+}
+
+@media (min-width: 3000px) {
+    .headline {
+        >h1 {
+            margin-left: 8%;
+        }
+    }
+
+    .contact-description {
+        margin-left: 18%;
+    }
+
+    form {
+        margin-right: 20%;
     }
 }
 

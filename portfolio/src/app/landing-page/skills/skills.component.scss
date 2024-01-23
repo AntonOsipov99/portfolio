@@ -157,6 +157,38 @@ h1 {
     color: white;
 }
 
+@media (min-width: 1900px) {
+    .icon-box {
+        margin-left: 15%;
+    }
+
+    .separator {
+        width: 10%;
+    }
+
+    .my-skills {
+        margin-right: 16%;
+    }
+
+    .content {
+        background-position: -20% 111%;
+    }
+}
+
+@media (min-width: 3000px) {
+    .icon-box {
+        margin-left: 18%;
+    }
+
+    .my-skills {
+        margin-right: 19%;
+    }
+
+    .separator {
+        width: 13%;
+    }
+}
+
 @media (max-width: 1300px) {
     .content {
         background-position: -75% 111%;
@@ -346,7 +378,7 @@ h1 {
     }
 
     .content {
-    background-position: -68% 111%;
+        background-position: -68% 111%;
     }
 }
 

@@ -68,6 +68,28 @@ img {
     margin-right: 10%;
 }
 
+@media (min-width: 1900px) {
+    .content {
+        margin-right: 15%;
+    }
+
+    img {
+        margin-right: 27%;
+        height: 500px;
+        width: 500px;
+    }
+
+    .topic-headline {
+        margin-top: 96px;
+    }
+}
+
+@media (min-width: 3000px) {
+    .content {
+        margin-right: 19%;
+    }
+}
+
 @media (max-width: 1150px) {
     img {
         margin-right: 0;
