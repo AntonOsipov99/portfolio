@@ -1,7 +1,7 @@
 <div class="content" id="skills">
     <div class="icon-box">
         <div *ngFor="let icon of icons">
-            <div class="icon-container">
+            <div class="icon-container" data-aos="zoom-out-right">
                 <img [src]="icon.url" alt="{{ icon.description }}" />
                 <p>{{ icon.description }}</p>
             </div>
@@ -12,24 +12,24 @@
     </div>
     <div class="my-skills">
         <div class="skills-box">
-            <h1>
+            <h1 data-aos="zoom-out-left">
                 My skills
             </h1>
             <div class="separator"></div>
         </div>
-        <span>I have enhanced my frontend development skills, enabling me to undertake various real projects.</span>
-        <a href="#contact"><div class="touch-button">
+        <span data-aos="zoom-out-left">I have enhanced my frontend development skills, enabling me to undertake various real projects.</span>
+        <a href="#contact"><div class="touch-button" data-aos="zoom-out-left">
             Get in touch
         </div></a>
     </div>
 </div>
 <div class="flex-box">
-    <div class="headline-short-separator"></div>
-    <h1 class="portfolio-headline" id="portfolio">
+    <div class="headline-short-separator" data-aos="zoom-in"></div>
+    <h1 class="portfolio-headline" id="portfolio" data-aos="zoom-in">
         Portfolio
     </h1>
-    <div class="headline-long-separator"></div>
+    <div class="headline-long-separator" data-aos="zoom-in"></div>
 </div>
-<p class="subheadline">This page is a showcase of my work - feel free to try them out</p>
+<p class="subheadline"  data-aos="zoom-in">This page is a showcase of my work - feel free to try them out</p>
 <app-join></app-join>
 <app-el-pollo-loco></app-el-pollo-loco>

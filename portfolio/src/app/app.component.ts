@@ -6,10 +6,12 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LandingPageComponent],
+  imports: [CommonModule, RouterOutlet, LandingPageComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'portfolio';
+
+
 }

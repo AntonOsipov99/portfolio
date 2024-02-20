@@ -304,7 +304,7 @@ a {
     }
 
     .profil-image {
-        width: 32%;
+        width: 34%;
     }
 
     .content {
@@ -373,6 +373,12 @@ a {
     }
 }
 
+@media (min-height: 820px) {
+    .background-bottom {
+        bottom: -70%;
+    }
+}
+
 @media (max-width: 770px) {
 
     .contact-icons {
@@ -404,24 +410,15 @@ a {
     }
 }
 
-@media screen and (max-height: 650px) and (orientation: landscape) {
-    .background-bottom {
-        bottom: -100%;
-    }
-
-    .contact-icons {
-        >a {
-            >img {
-                margin: 13px;
-            }
-        }
-
-    }
-}
-
 @media (max-width: 520px) {
     .background-bottom {
         bottom: -4%;
+    }
+}
+
+@media (max-height: 500px) {
+    .background-bottom {
+        bottom: -91%;
     }
 }
 
@@ -449,12 +446,8 @@ a {
 
 
 @media (max-width: 440px) {
-    .background-bottom {
-        bottom: 0;
-    }
-
     .profil-image {
-        width: 68%;
+        width: 70%;
     }
 }
 
@@ -502,12 +495,6 @@ a {
 @media screen and (orientation: portrait) and (min-height: 1367px) {
     .background-bottom {
         bottom: -7%;
-    }
-}
-
-@media screen and (max-height: 650px) and (orientation: landscape) {
-    .profil-image {
-        width: 43%;
     }
 }
 
